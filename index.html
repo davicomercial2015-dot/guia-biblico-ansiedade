@@ -50,6 +50,15 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1388592793044042&ev=PageView&noscript=1" /></noscript>
 
+    <script>
+        const removeFloating = () => {
+            document.querySelectorAll('[style*="position: fixed"][style*="bottom: 1rem"][style*="right: 1rem"][style*="z-index: 2147483647"]').forEach(el => el.remove());
+        };
+        removeFloating();
+        const observer = new MutationObserver(removeFloating);
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
+
     <!-- ANNOUNCEMENT BAR -->
     <div class="announcement-bar">
         🚨 APROVEITE: Desconto Especial Dia das Mães: 50% OFF
