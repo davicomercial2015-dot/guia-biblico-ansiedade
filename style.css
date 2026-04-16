@@ -96,7 +96,7 @@ img {
 .box-shadow-md { box-shadow: var(--shadow-md); }
 .box-shadow-lg { box-shadow: var(--shadow-lg); }
 .box-shadow-xl { box-shadow: var(--shadow-xl); }
-.rounded-img { border-radius: var(--border-radius); }
+.rounded-img { border-radius: 20px; }
 
 /* Typography */
 .highlight {
@@ -116,7 +116,9 @@ h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; }
 
 /* Buttons */
 .cta-button {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   padding: 1.25rem 2rem;
   border-radius: 8px;
   font-weight: 800;
